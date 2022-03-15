@@ -22,10 +22,10 @@ Control:
 (in x y) returns t when x is an element of list y, otherwise, nil.
 Buscar en una lista y un elemento x
  (defun in (x y)
-  		(if (atom y) ; 
-  			nil      ; devuelve nulo
-  			(or (equal x (first y)); list lista tiene dos partes el first y el resto en cada llamada se llama con el resto
-  			(in x (rest y)))))  ; call function in again but this time with the rest of the list
+  		(if (atom y) 
+  			nil      
+  			(or (equal x (first y))
+  			(in x (rest y)))))  
 
 Some tests:
 
